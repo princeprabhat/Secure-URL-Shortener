@@ -1,0 +1,35 @@
+# === Node.js (Backend) ===
+backend/node_modules/
+backend/.env
+backend/*.log
+backend/dump.sql
+backend/temp/
+
+# === React (Frontend) ===
+frontend/node_modules/
+frontend/.env
+frontend/build/
+frontend/dist/
+frontend/.next/
+frontend/.cache/
+
+# === Common Files ===
+*.log
+.env
+.env.*
+*.DS_Store
+
+# === Editor/IDE ===
+.vscode/
+.idea/
+*.swp
+
+# === Docker ===
+.dockerignore
+Dockerfile
+Dockerfile.*
+docker-compose.yml
+
+# === OS Specific ===
+Thumbs.db
+.DS_Store
