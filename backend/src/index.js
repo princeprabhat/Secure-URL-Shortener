@@ -3,8 +3,9 @@ import cors from 'cors';
 import helmet from 'helmet';
 import ApiError from "./utils/ApiError.js";
 import httpStatus from 'http-status';
-import { errorHandler } from "./middlewares/error";
-import routes from './routes/index.js';
+import { errorHandler } from "./middlewares/error.js";
+import apiRoutes from './routes/index.js';
+import redirectRoute from './routes/redirect.route.js';
 
 
 
@@ -18,7 +19,8 @@ app.use(express.json());
 app.use(cors());
 app.options('*', cors());
 
-app.use('/api/v1', routes);
+app.use('/api', apiRoutes);
+app.use('/', redirectRoute);
 
 app.use((req, res, next) => {
     next(new ApiError(httpStatus.NOT_FOUND, "Not a valid request"))

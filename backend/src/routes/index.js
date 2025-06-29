@@ -1,13 +1,12 @@
 import express from 'express';
-import urlRoute from './url.route.js';
-import analyticsRoute from './analytics.route.js';
+import v1Routes from './v1/index.js';
 
 
 const router = express.Router();
 
-router.use('/analytics', analyticsRoute);
 
-router.use('/', urlRoute);
+
+router.use('/v1', v1Routes);
 
 
 export default router;

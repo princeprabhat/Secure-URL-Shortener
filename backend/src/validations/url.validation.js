@@ -1,3 +1,5 @@
+import Joi from "joi";
+
 const validateShortenUrl = {
     body: Joi.object().keys({
         originalUrl: Joi.string()
