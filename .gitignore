@@ -1,9 +1,10 @@
 # === Node.js (Backend) ===
-backend/node_modules/
-backend/.env
-backend/*.log
-backend/dump.sql
-backend/temp/
+/node_modules
+/.env
+*.log
+dump.sql
+temp/
+dist
 
 # === React (Frontend) ===
 frontend/node_modules/
