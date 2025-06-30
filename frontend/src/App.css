@@ -1,9 +1,8 @@
 .home-layout {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: flex-start;
   padding: 0 1rem;
-  justify-content: center;
 }
 .left-box {
   /* background-color: aqua; */
