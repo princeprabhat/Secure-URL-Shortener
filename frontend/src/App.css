@@ -3,6 +3,7 @@
   gap: 1.5rem;
   align-items: flex-start;
   padding: 0 1rem;
+  justify-content: center;
 }
 .left-box {
   /* background-color: aqua; */
@@ -167,4 +168,14 @@
 }
 .analytics-card > p > span {
   color: #00bcd4;
+}
+
+@media only screen and (max-width: 1360px) {
+  .home-layout {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .url-container > form > input {
+    width: 65%;
+  }
 }
