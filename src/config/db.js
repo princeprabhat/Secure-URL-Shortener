@@ -3,8 +3,11 @@ import config from "./config.js";
 
 
 const pool = new Pool({
-    connectionString: config.postgres.uri
-})
+  connectionString: config.postgres.uri,
+  ssl: {
+    rejectUnauthorized: false,
+  },
+});
 
 export const createTableQuery = `
 CREATE TABLE IF NOT EXISTS urls (
