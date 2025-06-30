@@ -114,4 +114,4 @@ All services are automatically linked via Docker Compose.
 ## 👨‍💻 Author
 
 Prince Prabhat  
-Made with ❤️ and containers 🐳
+Made with 🖥️ and containers 🐳
