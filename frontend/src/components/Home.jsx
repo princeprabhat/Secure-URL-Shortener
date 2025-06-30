@@ -1,4 +1,4 @@
-import UrlShortener from "./urlShortener";
+import UrlShortener from "./UrlShortener";
 import UrlList from "./urlList";
 import AnalyticsCard from "./AnalyticsCard";
 import { useEffect, useState } from "react";
