@@ -1,6 +1,6 @@
 .home-layout {
   display: flex;
-  gap: 1.5rem;
+  justify-content:space-between;
   align-items: flex-start;
   padding: 0 1rem;
 }
