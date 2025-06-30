@@ -1,5 +1,5 @@
 import UrlShortener from "./UrlShortener";
-import UrlList from "./urlList";
+import UrlList from "./UrlList";
 import AnalyticsCard from "./AnalyticsCard";
 import { useEffect, useState } from "react";
 import api from "../api";
