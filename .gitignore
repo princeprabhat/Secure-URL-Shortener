@@ -1,35 +1,37 @@
 # === Node.js (Backend) ===
-/node_modules
-/.env
-*.log
-dump.sql
-temp/
-dist
+backend/node_modules/
+backend/.env
+backend/dist/
+backend/*.log
+backend/temp/
+backend/dump.sql
 
-# === React (Frontend) ===
+# === React (Frontend - CRA) ===
 frontend/node_modules/
 frontend/.env
 frontend/build/
-frontend/dist/
-frontend/.next/
-frontend/.cache/
+frontend/coverage/
+frontend/*.log
 
 # === Common Files ===
+*.env
+*.env.*
 *.log
-.env
-.env.*
 *.DS_Store
+*.swp
 
 # === Editor/IDE ===
 .vscode/
 .idea/
-*.swp
 
 # === Docker ===
+# Don't ignore these files if you want them on GitHub for setup
+# Just in case you want to *exclude* Docker files during local dev builds:
+# Uncomment below only if necessary
+# Dockerfile
+# Dockerfile.*
+# docker-compose.yml
 .dockerignore
-Dockerfile
-Dockerfile.*
-docker-compose.yml
 
 # === OS Specific ===
 Thumbs.db

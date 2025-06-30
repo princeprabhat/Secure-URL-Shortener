@@ -1,4 +1,4 @@
-import { handleCopy } from "../utils";
+import { handleCopy } from "../utils.js";
 
 const UrlList = ({ urlData, handleRedirect, handleAnalytics }) => {
   return (

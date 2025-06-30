@@ -1,8 +1,8 @@
-import UrlShortener from "./UrlShortener";
-import UrlList from "./UrlList";
-import AnalyticsCard from "./AnalyticsCard";
+import UrlShortener from "./UrlShortener.jsx";
+import UrlList from "./UrlList.jsx";
+import AnalyticsCard from "./AnalyticsCard.jsx";
 import { useEffect, useState } from "react";
-import api from "../api";
+import api from "../api.js";
 
 const Home = () => {
   const [urls, setUrls] = useState([]);
@@ -21,9 +21,7 @@ const Home = () => {
 
   // handling redirect from frontend to hit /:shortCode endpoint
   const handleRedirect = async (shortCode) => {
-    const fullRedirectUrl = `${
-      import.meta.env.VITE_REDIRECT_BASE_URL
-    }/${shortCode}`;
+    const fullRedirectUrl = `${process.env.REACT_APP_REDIRECT_BASE_URL}/${shortCode}`;
     window.open(fullRedirectUrl, "_blank");
   };
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import api from "../api";
-import { isValidHttpUrl } from "../utils";
-import { handleCopy } from "../utils";
+import api from "../api.js";
+import { isValidHttpUrl } from "../utils.js";
+import { handleCopy } from "../utils.js";
 
 const UrlShortener = ({ refreshLocalData }) => {
   const [inputValue, setInputValue] = useState("");
@@ -21,7 +21,7 @@ const UrlShortener = ({ refreshLocalData }) => {
     try {
       const res = await api.post("/shorten", { originalUrl: inputValue });
       // Terminate if url is already sorted
-      if (res.data.message == "Short URL already exists") {
+      if (res.data.message === "Short URL already exists") {
         alert(res.data.message);
         return;
       }
