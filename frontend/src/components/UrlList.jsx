@@ -14,7 +14,7 @@ const UrlList = ({ urlData, handleRedirect, handleAnalytics }) => {
             <div className="btn-container">
               <button
                 className="link-copy-btn"
-                onClick={() => handleCopy(item.short_url)}
+                onClick={() => handleCopy(item?.short_url)}
               >
                 copy short url
               </button>

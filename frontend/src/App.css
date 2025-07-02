@@ -69,9 +69,12 @@
   text-align: center;
   cursor: pointer;
   background-color: #f0f0f0;
-  width: max-content;
+
   padding: 0.5rem 1rem;
   border-radius: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .copy-btn {
   font-size: 1rem;
